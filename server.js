@@ -43,6 +43,7 @@ app.use('/uploads', (req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('X-Content-Type-Options', 'nosniff');
     res.setHeader('Cache-Control', 'public, max-age=31536000');
+    res.setHeader("Content-Type", "application/javascript");
     next();
 });
 
